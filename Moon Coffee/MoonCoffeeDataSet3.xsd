@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MoonCoffeeDataSet3" targetNamespace="http://tempuri.org/MoonCoffeeDataSet3.xsd" xmlns:mstns="http://tempuri.org/MoonCoffeeDataSet3.xsd" xmlns="http://tempuri.org/MoonCoffeeDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MoonCoffeeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MoonCoffeeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Moon_Coffee.Properties.Settings.GlobalReference.Default.MoonCoffeeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IcerikTableAdapter" GeneratorDataComponentClassName="IcerikTableAdapter" Name="Icerik" UserDataComponentName="IcerikTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MoonCoffeeConnectionString (Settings)" DbObjectName="MoonCoffee.dbo.Icerik" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT adet FROM dbo.Icerik</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="adet" DataSetColumn="adet" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MoonCoffeeDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MoonCoffeeDataSet3" msprop:Generator_UserDSName="MoonCoffeeDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Icerik" msprop:Generator_TableClassName="IcerikDataTable" msprop:Generator_TableVarName="tableIcerik" msprop:Generator_TablePropName="Icerik" msprop:Generator_RowDeletingName="IcerikRowDeleting" msprop:Generator_RowChangingName="IcerikRowChanging" msprop:Generator_RowEvHandlerName="IcerikRowChangeEventHandler" msprop:Generator_RowDeletedName="IcerikRowDeleted" msprop:Generator_UserTableName="Icerik" msprop:Generator_RowChangedName="IcerikRowChanged" msprop:Generator_RowEvArgName="IcerikRowChangeEvent" msprop:Generator_RowClassName="IcerikRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="adet" msprop:Generator_ColumnVarNameInTable="columnadet" msprop:Generator_ColumnPropNameInRow="adet" msprop:Generator_ColumnPropNameInTable="adetColumn" msprop:Generator_UserColumnName="adet" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

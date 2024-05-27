@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{541C595E-B159-4126-9A92-BAA1E688D505}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Moon_Coffee</RootNamespace>
+    <AssemblyName>Moon Coffee</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonManager.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayit.Designer.cs">
+      <DependentUpon>Kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gecmisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gecmisler.Designer.cs">
+      <DependentUpon>Gecmisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gezgin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gezgin.Designer.cs">
+      <DependentUpon>Gezgin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IcerikEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IcerikEkle.Designer.cs">
+      <DependentUpon>IcerikEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcılar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcılar.Designer.cs">
+      <DependentUpon>Kullanıcılar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masalar.Designer.cs">
+      <DependentUpon>Masalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BardakBoy.cs" />
+    <Compile Include="Model\Ekstra.cs" />
+    <Compile Include="Model\Gecmis.cs" />
+    <Compile Include="Model\Icerik.cs" />
+    <Compile Include="Model\Kategori.cs" />
+    <Compile Include="Model\Kullanici.cs" />
+    <Compile Include="Model\Masa.cs" />
+    <Compile Include="Model\MoonCoffeeContext.cs" />
+    <Compile Include="Model\OdemeTuru.cs" />
+    <Compile Include="Model\Satıs.cs" />
+    <Compile Include="Model\surup.cs" />
+    <Compile Include="Model\sut.cs" />
+    <Compile Include="Model\sysdiagrams.cs" />
+    <Compile Include="MoonCoffeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoonCoffeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoonCoffeeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoonCoffeeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoonCoffeeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoonCoffeeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoonCoffeeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoonCoffeeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SepetUrun.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gecmisler.resx">
+      <DependentUpon>Gecmisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gezgin.resx">
+      <DependentUpon>Gezgin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IcerikEkle.resx">
+      <DependentUpon>IcerikEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayit.resx">
+      <DependentUpon>Kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcılar.resx">
+      <DependentUpon>Kullanıcılar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masalar.resx">
+      <DependentUpon>Masalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MoonCoffeeDataSet.xsc">
+      <DependentUpon>MoonCoffeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MoonCoffeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoonCoffeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoonCoffeeDataSet.xss">
+      <DependentUpon>MoonCoffeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MoonCoffeeDataSet1.xsc">
+      <DependentUpon>MoonCoffeeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MoonCoffeeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoonCoffeeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoonCoffeeDataSet1.xss">
+      <DependentUpon>MoonCoffeeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MoonCoffeeDataSet2.xsc">
+      <DependentUpon>MoonCoffeeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MoonCoffeeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoonCoffeeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoonCoffeeDataSet2.xss">
+      <DependentUpon>MoonCoffeeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MoonCoffeeDataSet3.xsc">
+      <DependentUpon>MoonCoffeeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MoonCoffeeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoonCoffeeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoonCoffeeDataSet3.xss">
+      <DependentUpon>MoonCoffeeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
